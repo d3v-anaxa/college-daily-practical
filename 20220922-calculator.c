@@ -15,38 +15,41 @@ int main()
     menu();
     printf("Enter Choice [1-5] : ");
     scanf("%d", &operator);
-    printf("Enter first operand : ");
-    scanf("%f", &operand1);
-    printf("Enter second operand : ");
-    scanf("%f", &operand2);
-
-    switch (operator)
+    if (operator> 5 || operator<1)
     {
-    case 1:
-      printf("%f + %f = %f\n", operand1, operand2, operand1 + operand2);
-      break;
-    case 2:
-      printf("%f - %f = %f\n", operand1, operand2, operand1 - operand2);
-      break;
-    case 3:
-      printf("%f * %f = %f\n", operand1, operand2, operand1 * operand2);
-      break;
-    case 4:
-      printf("%f / %f = %f\n", operand1, operand2, operand1 / operand2);
-      break;
-    case 5:
-      printf("[PROGRAM CLOSED]\n");
-      exit(EXIT_SUCCESS);
-      break;
-    default:
-      printf("Invalid Choice\n");
-      main();
-      break;
+      printf("INVALID CHOICE\n");
+    }
+    else
+    {
+      printf("Enter first operand : ");
+      scanf("%f", &operand1);
+      printf("Enter second operand : ");
+      scanf("%f", &operand2);
+
+      switch (operator)
+      {
+      case 1:
+        printf("%f + %f = %f\n", operand1, operand2, operand1 + operand2);
+        break;
+      case 2:
+        printf("%f - %f = %f\n", operand1, operand2, operand1 - operand2);
+        break;
+      case 3:
+        printf("%f * %f = %f\n", operand1, operand2, operand1 * operand2);
+        break;
+      case 4:
+        printf("%f / %f = %f\n", operand1, operand2, operand1 / operand2);
+        break;
+      case 5:
+        printf("[PROGRAM CLOSED]\n");
+        exit(EXIT_SUCCESS);
+        break;
+      }
     }
     printf("You still want to continue? [y/n] : \n");
     choice = getchar();
   } while ((choice = getchar()) == 'y');
-  printf("Program Exit");
+  printf("[PROGRAM EXITED]\n");
 }
 
 void menu()
