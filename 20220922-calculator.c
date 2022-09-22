@@ -29,16 +29,16 @@ int main()
       switch (operator)
       {
       case 1:
-        printf("%f + %f = %f\n", operand1, operand2, operand1 + operand2);
+        printf("%.2f + %.2f = %.2f\n", operand1, operand2, operand1 + operand2);
         break;
       case 2:
-        printf("%f - %f = %f\n", operand1, operand2, operand1 - operand2);
+        printf("%.2f - %.2f = %.2f\n", operand1, operand2, operand1 - operand2);
         break;
       case 3:
-        printf("%f * %f = %f\n", operand1, operand2, operand1 * operand2);
+        printf("%.2f * %.2f = %.2f\n", operand1, operand2, operand1 * operand2);
         break;
       case 4:
-        printf("%f / %f = %f\n", operand1, operand2, operand1 / operand2);
+        printf("%.2f / %.2f = %.2f\n", operand1, operand2, operand1 / operand2);
         break;
       case 5:
         printf("[PROGRAM CLOSED]\n");
