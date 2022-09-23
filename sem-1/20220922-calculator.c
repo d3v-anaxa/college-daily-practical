@@ -19,6 +19,12 @@ int main()
     {
       printf("INVALID CHOICE\n");
     }
+    else if (operator== 5)
+    {
+      printf("[PROGRAM CLOSED]\n");
+      exit(EXIT_SUCCESS);
+      break;
+    }
     else
     {
       printf("Enter first operand : ");
@@ -29,7 +35,7 @@ int main()
       switch (operator)
       {
       case 1:
-        printf("%.2f + %.2f = %.2f\n", operand1, operand2, operand1 + operand2);
+        printf("%.2f + %.2f = %.2f\n", operand1, operand2, (operand1 + operand2));
         break;
       case 2:
         printf("%.2f - %.2f = %.2f\n", operand1, operand2, operand1 - operand2);
@@ -39,10 +45,6 @@ int main()
         break;
       case 4:
         printf("%.2f / %.2f = %.2f\n", operand1, operand2, operand1 / operand2);
-        break;
-      case 5:
-        printf("[PROGRAM CLOSED]\n");
-        exit(EXIT_SUCCESS);
         break;
       }
     }
