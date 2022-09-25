@@ -1,0 +1,7 @@
+*
+!*.c
+!*.txt
+!*.md
+!.gitignore
+!assets/
+!assets/*.*
