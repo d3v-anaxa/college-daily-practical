@@ -1,6 +1,7 @@
 #include <stdio.h>
-#include <stdbool.h>
+// #include <stdbool.h>
 #include <stdlib.h>
+#include <unistd.h>
 
 void menu(); // prototype declaration
 
@@ -12,6 +13,8 @@ int main()
 
   do
   {
+    system("clear");
+    sleep(1);
     menu();
     printf("Enter Choice [1-5] : ");
     scanf("%d", &operator);
@@ -48,7 +51,8 @@ int main()
         break;
       }
     }
-    printf("You still want to continue? [y/n] : \n");
+    sleep(2);
+    printf("You still want to continue? [y/n] : ");
     choice = getchar();
   } while ((choice = getchar()) == 'y');
   printf("[PROGRAM EXITED]\n");
