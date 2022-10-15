@@ -1,11 +1,11 @@
-+ SEPT 22, 2022 --------------------------------->
+* SEPT 22, 2022 --------------------------------->
 
 \\ Preprocessor directives in C
 
-We can consider a preprocessor as a compilation process, which runs when the developer runs the program. It is a pre-process of execution of a program using c/c++ language. To initialize a process of preprocessor commands, it's mandated to define with a hash symbol (#).  It can  preferably be the non-blank character, and for better readability, a preprocessor directive should start in the first column. 
+We can consider a preprocessor as a compilation process, which runs when the developer runs the program. It is a pre-process of execution of a program using c/c++ language. To initialize a process of preprocessor commands, it's mandated to define with a hash symbol (#).  It can  preferably be the non-blank character, and for better readability, a preprocessor directive should start in the first column.
 
 List of Preprocessor Directives
-To execute a preprocessor program on a certain statement, some of the preprocessor directives types are: 
+To execute a preprocessor program on a certain statement, some of the preprocessor directives types are:
 
 ```c
 #define: It substitutes a preprocessor using macro.
@@ -26,15 +26,15 @@ To execute a preprocessor program on a certain statement, some of the preprocess
 \\ integer value swap without using third (temp) variable
 \\ calculator program
 
-+ SEPT 23, 2022 --------------------------------->
+* SEPT 23, 2022 --------------------------------->
 
 \\ basic logic gates : [[https://www.geeksforgeeks.org/logic-gates-definition-types-uses/]]
 \\ universal  gates : [[https://www.electronics-tutorials.ws/logic/universal-gates.html]]
 
-+ OCT 12, 2022 --------------------------------->
+* OCT 12, 2022 --------------------------------->
 
 \\ file access / manipulation
 
-+ OCT 14, 2022 --------------------------------->
+* OCT 14, 2022 --------------------------------->
 
 \\ combinational logic circuit (Half & Full Adder) [[computer_system_architecture - 3ed - morris_mano ~ pg 20]]
