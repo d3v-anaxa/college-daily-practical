@@ -3,6 +3,4 @@
 !*.txt
 !*.md
 !.gitignore
-!assets/
-!assets/*.*
 !college_notes
