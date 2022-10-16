@@ -34,6 +34,7 @@ To execute a preprocessor program on a certain statement, some of the preprocess
 * OCT 12, 2022 --------------------------------->
 
 \\ file access / manipulation
+\\ command line arguments [argc & argv]
 
 * OCT 14, 2022 --------------------------------->
 
