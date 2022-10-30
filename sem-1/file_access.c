@@ -1,39 +1,16 @@
 #include <stdio.h>
 #include <ctype.h>
-
-void printFileContent(char file[]);
-void copyToAnotherFile(char fin[], char fout[]);
-void countVowel(char fin[]);
-void countConsonant(char fin[]);
-void countAlphabet(char fin[]);
-void printFromFinalNCharacters(char fin[], int offset); // use of fseek()
-
-int main()
-{
-
-  // printFileContent("abc");
-  // printFileContent("xyz");
-  // printFileContent("mno");
-  // copyToAnotherFile("abc", "xyz");
-  // countVowel("mno");
-  // countConsonant("mno");
-  // countAlphabet("mno");
-  printFromFinalNCharacters("mno", 26);
-
-  return 0;
-}
+#include <unistd.h>
 
 void printFileContent(char file[])
 {
   FILE *fl;
   char ch;
   fl = fopen(file, "r");
-  ch = fgetc(fl);
   printf("File content \"%s\" -> \t", file);
-  while (ch != EOF)
+  while ((ch = fgetc(fl)) != EOF)
   {
     printf("%c", ch);
-    ch = fgetc(fl);
   }
   printf("\n");
   fclose(fl);
@@ -45,11 +22,9 @@ void copyToAnotherFile(char fin[], char fout[])
   char ch;
   fl1 = fopen(fin, "r");
   fl2 = fopen(fout, "w");
-  ch = fgetc(fl1);
-  while (ch != EOF)
+  while ((ch = fgetc(fl1)) != EOF)
   {
     fputc(ch, fl2);
-    ch = fgetc(fl1);
   }
   printf("File copied successfully\n");
   fclose(fl1);
@@ -62,9 +37,9 @@ void countVowel(char fin[])
   char ch;
   int count = 0;
   fl = fopen(fin, "r");
-  while (ch != EOF)
+  while ((ch = fgetc(fl)) != EOF)
   {
-    ch = tolower(fgetc(fl));
+    ch = tolower(ch);
     count += (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u') ? 1 : 0;
   }
   fclose(fl);
@@ -77,9 +52,9 @@ void countConsonant(char fin[])
   char ch;
   int count = 0;
   fl = fopen(fin, "r");
-  while (ch != EOF)
+  while ((ch = fgetc(fl)) != EOF)
   {
-    ch = tolower(fgetc(fl));
+    ch = tolower(ch);
     count += (!(ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u') && (ch >= 'a' && ch <= 'z')) ? 1 : 0;
   }
   fclose(fl);
@@ -92,9 +67,9 @@ void countAlphabet(char fin[])
   char ch;
   int count = 0;
   fl = fopen(fin, "r");
-  while (ch != EOF)
+  while ((ch = fgetc(fl)) != EOF)
   {
-    ch = tolower(fgetc(fl));
+    ch = tolower(ch);
     count += (ch >= 'a' && ch <= 'z') ? 1 : 0;
   }
   fclose(fl);
@@ -117,4 +92,19 @@ void printFromFinalNCharacters(char fin[], int offset)
   }
   printf("\n");
   fclose(fl);
+}
+
+
+int main()
+{
+
+   printFileContent("abc");
+   printFileContent("xyz");
+  printFileContent("mno");
+   copyToAnotherFile("abc", "xyz");
+  countVowel("mno");
+  countConsonant("mno");
+  countAlphabet("mno");
+   printFromFinalNCharacters("mno", 26);
+  return 0;
 }
