@@ -39,3 +39,8 @@ To execute a preprocessor program on a certain statement, some of the preprocess
 * OCT 14, 2022 --------------------------------->
 
 \\ combinational logic circuit (Half & Full Adder) [[computer_system_architecture - 3ed - morris_mano ~ pg 20]]
+
+* OCT 21, 2022 --------------------------------->
+
+\\ Multiplexer [ definition | 4x1 MUX | 8x1 MUX using 2 4x1 MUX ]
+\\ DeMux [ definition | 1x4 DeMux | 1x8 DeMux using 2 1x4 DeMux ]
