@@ -44,3 +44,20 @@ To execute a preprocessor program on a certain statement, some of the preprocess
 
 \\ Multiplexer [ definition | 4x1 MUX | 8x1 MUX using 2 4x1 MUX ]
 \\ DeMux [ definition | 1x4 DeMux | 1x8 DeMux using 2 1x4 DeMux ]
+
+* NOV 03, 2022 --------------------------------->
+
+\\ Array [ Definition | Declaration + Initialization | Initialisation of values using loops & scanf() ]
+
+[IMPORTANT TOPICS FOR EXAM]:
+    > Datatypes [1 Question]
+    > Storage Classes
+    > {Bitwise , Conditional , Sizeof} operator
+    > goto statement
+    > defference in all loops
+    > difference between if-else & switch (advantages & disadvantages)
+    > nested if-else
+    > break & continue
+    > function prototype {declaration, Overloading}
+ ** > call by value & call by reference
+ 
