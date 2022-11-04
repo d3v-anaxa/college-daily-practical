@@ -59,5 +59,11 @@ To execute a preprocessor program on a certain statement, some of the preprocess
     > nested if-else
     > break & continue
     > function prototype {declaration, Overloading}
- ** > call by value & call by reference
+ ## > call by value & call by reference
  
+* NOV 04, 2022 --------------------------------->
+
+\\ Encoder [ definition | block diagram | truth table | logic circuit  | Decimal to binary | Octal to binary ]
+\\ Decoder [ definition | block diagram | truth table | logic circuit  | 2-to-4 decoder | 3-to-8 decoder using 2 2-to-4 encoder ]
+   [[https://dducollegedu.ac.in/Datafiles/cms/ecourse%20content/Chapter-2.pdf]]
+|EXTRA| {BCD CODE -> (259)_(10) => (0010 0101 1001)_(BCD)}
