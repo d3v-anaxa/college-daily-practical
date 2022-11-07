@@ -1,4 +1,4 @@
-* SEPT 22, 2022 --------------------------------->
+* SEPT 22, 2022 ---------------------------------> PM
 
 \\ Preprocessor directives in C
 
@@ -21,38 +21,38 @@ To execute a preprocessor program on a certain statement, some of the preprocess
 #region and #endregion: To define the sections of the code to make them more understandable and readable, we can use the region using expansion and collapse features.
 ```
 
-\\ macro-expansion
-\\ edge cases in loops
-\\ integer value swap without using third (temp) variable
-\\ calculator program
+\\ macro-expansion ['./macro-expansion.c']
+\\ edge cases in loops ['./loop-extras.c']
+\\ integer value swap without using third (temp) variable ['./integer-value-swap-without-third-variable.c']
+\\ calculator program ['./calculator.c']
 
-* SEPT 23, 2022 --------------------------------->
+* SEPT 23, 2022 ---------------------------------> JM
 
 \\ basic logic gates : [[https://www.geeksforgeeks.org/logic-gates-definition-types-uses/]]
 \\ universal  gates : [[https://www.electronics-tutorials.ws/logic/universal-gates.html]]
 
-* OCT 12, 2022 --------------------------------->
+* OCT 12, 2022 ---------------------------------> PM
 
-\\ file access / manipulation
-\\ command line arguments [argc & argv]
+\\ file access / manipulation ['./file_access.c']
+\\ command line arguments [argc & argv] ['./command_line_arguments.c']
 
-* OCT 14, 2022 --------------------------------->
+* OCT 14, 2022 ---------------------------------> JM
 
 \\ combinational logic circuit (Half & Full Adder) [[computer_system_architecture - 3ed - morris_mano ~ pg 20]]
 
-* OCT 21, 2022 --------------------------------->
+* OCT 21, 2022 ---------------------------------> JM
 
 \\ Multiplexer [ definition | 4x1 MUX | 8x1 MUX using 2 4x1 MUX ]
 \\ DeMux [ definition | 1x4 DeMux | 1x8 DeMux using 2 1x4 DeMux ]
 
-* NOV 03, 2022 --------------------------------->
+* NOV 03, 2022 ---------------------------------> PM
 
-\\ Array [ Definition | Declaration + Initialization | Initialisation of values using loops & scanf() ]
+\\ Array [ Definition | Declaration + Initialization | Initialisation of values using loops & scanf() ] ['./array.c']
 
 [IMPORTANT TOPICS FOR EXAM]:
     > Datatypes [1 Question]
     > Storage Classes
-    > {Bitwise , Conditional , Sizeof} operator
+    > {Bitwise , Conditional/Ternary , Sizeof} operator
     > goto statement
     > defference in all loops
     > difference between if-else & switch (advantages & disadvantages)
@@ -61,9 +61,15 @@ To execute a preprocessor program on a certain statement, some of the preprocess
     > function prototype {declaration, Overloading}
  ## > call by value & call by reference
  
-* NOV 04, 2022 --------------------------------->
+* NOV 04, 2022 ---------------------------------> JM
 
 \\ Encoder [ definition | block diagram | truth table | logic circuit  | Decimal to binary | Octal to binary ]
 \\ Decoder [ definition | block diagram | truth table | logic circuit  | 2-to-4 decoder | 3-to-8 decoder using 2 2-to-4 encoder ]
    [[https://dducollegedu.ac.in/Datafiles/cms/ecourse%20content/Chapter-2.pdf]]
 |EXTRA| {BCD CODE -> (259)_(10) => (0010 0101 1001)_(BCD)}
+
+
+* NOV 07, 2022 ---------------------------------> PM
+
+\\ String functions : strcpy(), strcat(), strcmp(), gets(), puts(), fgets(), fputs()
+\\ file access using commandline arguments [argc & argv] ['./file_access_2.c']
