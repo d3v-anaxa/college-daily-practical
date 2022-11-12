@@ -73,3 +73,11 @@ To execute a preprocessor program on a certain statement, some of the preprocess
 
 \\ String functions : strcpy(), strcat(), strcmp(), gets(), puts(), fgets(), fputs()
 \\ file access using commandline arguments [argc & argv] ['./file_access_2.c']
+
+
+* NOV 12, 2022 ---------------------------------> JM
+
+\\ Number System && Base Conversion [ Integer && Float ] : Binary > Decimal > Octal > Hexadecimal
+   [[https://www.geeksforgeeks.org/number-system-and-base-conversions/]]
+\\ Binary Addition
+\\ Binary Subtraction
