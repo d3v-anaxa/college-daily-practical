@@ -3,3 +3,4 @@
 !*.md
 !.gitignore
 !college_notes
+!*.cpp
