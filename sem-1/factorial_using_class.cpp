@@ -1,3 +1,4 @@
+#include <cstdlib>
 #include <iostream>
 
 using namespace std;
@@ -25,6 +26,7 @@ void number::get_fib() {
         f *= x;
         --x;
     }
+    if (f < 1) {std::cout << "LIMIT EXCEEDED" << std::endl; exit(EXIT_SUCCESS);}
     std::cout << "The factorial of " << prev_num << " is : " << f << std::endl;
 }
 
