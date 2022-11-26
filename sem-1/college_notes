@@ -100,3 +100,22 @@ To execute a preprocessor program on a certain statement, some of the preprocess
 \\ Subtraction using  1's Complement & 2,s Complement.
 
 [H/W : WAP to get 1's complement of any binary string in C++]
+
+
+* NOV 22, 2022 ---------------------------------> PM
+
+\\ Karnaugh-map
+\\ SOP [MINTERMS]
+\\ K-Map using (2, 3, 4) variables
+   [[https://www.geeksforgeeks.org/introduction-to-k-map-karnaugh-map]]
+
+* NOV 25, 2022 ---------------------------------> PM
+
+\\ Constructor [ default & parameterised | syntax | use-cases ]
+\\ inheritance [ syntax | types of inheritance | use-cases ]
+\\ Deconstructor in C++ [ use-cases | syntax ]
+
+* NOV 25, 2022 ---------------------------------> JM
+
+\\ class test on NUMBER SYSTER [26/40]
+
