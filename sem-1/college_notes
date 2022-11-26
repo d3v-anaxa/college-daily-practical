@@ -102,7 +102,7 @@ To execute a preprocessor program on a certain statement, some of the preprocess
 [H/W : WAP to get 1's complement of any binary string in C++]
 
 
-* NOV 22, 2022 ---------------------------------> PM
+* NOV 24, 2022 ---------------------------------> PM
 
 \\ Karnaugh-map
 \\ SOP [MINTERMS]
@@ -114,6 +114,7 @@ To execute a preprocessor program on a certain statement, some of the preprocess
 \\ Constructor [ default & parameterised | syntax | use-cases ]
 \\ inheritance [ syntax | types of inheritance | use-cases ]
 \\ Deconstructor in C++ [ use-cases | syntax ]
+    [ ./"1's_complement.cpp" is made using constructor and destructor ]
 
 * NOV 25, 2022 ---------------------------------> JM
 
