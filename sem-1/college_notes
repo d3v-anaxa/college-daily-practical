@@ -114,9 +114,11 @@ To execute a preprocessor program on a certain statement, some of the preprocess
 \\ Constructor [ default & parameterised | syntax | use-cases ]
 \\ inheritance [ syntax | types of inheritance | use-cases ]
 \\ Deconstructor in C++ [ use-cases | syntax ]
-    [ ./"1's_complement.cpp" is made using constructor and destructor ]
 
 * NOV 25, 2022 ---------------------------------> JM
 
 \\ class test on NUMBER SYSTER [26/40]
 
+* NOV 28, 2022 ---------------------------------> PM
+
+\\ practical_inmplementation [ ./inheritance.cpp (incomplete) | ./"1's_complement.cpp" ]
