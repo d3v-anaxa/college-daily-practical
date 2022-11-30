@@ -1,71 +1,38 @@
 #include <iostream>
-#include <vector>
 #include <bits/stdc++.h>
-#define TEMP_STR_LEN 50
 using namespace std;
 
 class parent {
-        vector<std::string> hidden_skill{};
     public :
-        vector<std::string> open_skill{};
-        void add_parent_skill();
-        void show_parent_skill();
+        unsigned int parent_age{};
+        void set_parent_age();
+        parent(){};
+        ~parent(){};
 };
 
-void parent::add_parent_skill() {
-    char yORn = 'y';
-    string temp_skill;
-    do {
-        unsigned choice{}; 
-        std::cout << "Write skill -> " && std::cin >> temp_skill;
-        std::cout << "1. Add as hidden skill." << std::endl;
-        std::cout << "2. Add as open skill." << std::endl << std::endl;
-        std::cout << "Enter choice : " && std::cin >> choice;
-        switch(choice) {
-            case 1 :
-                parent::hidden_skill.push_back(temp_skill);
-                std::cout << "Added as hidden_skill" << std::endl;
-                break;
-            default:
-                parent::open_skill.push_back(temp_skill);
-                std::cout << "Added as open_skill [default] " << std::endl;
-                break;
-        }
-        std::cout << "Do you want to continue ?? [Y/n]" && std::cin >> yORn;
-    } while ( tolower(yORn) == 'y');
-    std::cout << "Parent skills added successfully!" << std::endl;
-}
-
-void parent::show_parent_skill() {
-    std::cout << "Parent hidden skill(s) : ";
-    for (auto i : parent::hidden_skill) {
-        std::cout << i;
-    }   std::cout << std::endl;
-    std::cout << "Parent open skill(s) : ";
-    for (auto i : parent::open_skill) {
-        std::cout << i;
-    }   std::cout << std::endl;
+void parent::set_parent_age() {
+    unsigned temp_age{};
+    std::cout << "Enter parent's age : " && std::cin >> temp_age;
+    if (temp_age <= 18){std::cout << "Under-Age!!" <<std::endl;return this->set_parent_age();}
+    if (temp_age >= 100){std::cout << "You aren't dead  yet!!" <<std::endl;return this->set_parent_age();}
+    parent_age = temp_age;
 }
 
 class child : public parent {
-    private :
-        vector<std::string> inherited_skill{};
     public :
-        void show_inherited_skill();
+        unsigned int min_child_age{};
+        void show_min_child_age();
+        child(parent obj) {this->min_child_age = obj.parent_age - 18;};
+        ~child(){std::cout << "Child OBJ destroyed" << std::endl;};
 };
 
-void child::show_inherited_skill() {
-    parent::show_parent_skill();   
-    child::inherited_skill.insert( child::inherited_skill.end(), parent::open_skill.begin(), parent::open_skill.end() );
-    std::cout << "Inherited Skills are : ";
-    for (auto i : child::inherited_skill) {
-        std::cout << i ;
-    }   std::cout << std::endl;
+void child::show_min_child_age(){
+    std::cout <<  "The child's minimum age should be " << min_child_age << "+ yrs" << std::endl;
 }
 
 int main(void) {
     parent father;
-    father.add_parent_skill();
-    child elon;
-    elon.show_inherited_skill();
+    father.set_parent_age();
+    child elon(father);
+    elon.show_min_child_age();
 }
