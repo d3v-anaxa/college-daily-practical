@@ -121,4 +121,19 @@ To execute a preprocessor program on a certain statement, some of the preprocess
 
 * NOV 28, 2022 ---------------------------------> PM
 
-\\ practical_inmplementation [ ./inheritance.cpp (incomplete) | ./"1's_complement.cpp" ]
+\\ practical_inmplementation [ ./inheritance.cpp | ./"1's_complement.cpp" ]
+
+* NOV 30, 2022 ---------------------------------> PM
+
+\\ Implementation of SOP function using multiplexer
+    [[https://www.geeksforgeeks.org/implementation-of-sop-function-using-multiplexer/]]
+\\ Sequential Logic Circuit
+    [[https://www.geeksforgeeks.org/introduction-of-sequential-circuits/]]
+\\ Flip-flops
+    [[https://www.geeksforgeeks.org/flip-flop-types-their-conversion-and-applications/]]
+\\ Conversion between multiple flip-flops (with Excitation Table)
+    [[computer_system_architecture - 3ed - morris_mano ~ pg 29]]
+    [[https://www.geeksforgeeks.org/conversion-of-s-r-flip-flop-into-t-flip-flop/]]
+    [[https://www.geeksforgeeks.org/conversion-of-s-r-flip-flop-into-d-flip-flop/]]
+    [[https://www.geeksforgeeks.org/conversion-of-j-k-flip-flop-into-t-flip-flop/]]
+    [[https://www.geeksforgeeks.org/conversion-of-j-k-flip-flop-into-d-flip-flop/]]
