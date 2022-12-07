@@ -137,3 +137,13 @@ To execute a preprocessor program on a certain statement, some of the preprocess
     [[https://www.geeksforgeeks.org/conversion-of-s-r-flip-flop-into-d-flip-flop/]]
     [[https://www.geeksforgeeks.org/conversion-of-j-k-flip-flop-into-t-flip-flop/]]
     [[https://www.geeksforgeeks.org/conversion-of-j-k-flip-flop-into-d-flip-flop/]]
+
+* DEC 07, 2022 ---------------------------------> PM
+
+\\ Operator Overloading [ unary && binary ]
+   [[https://www.geeksforgeeks.org/operator-overloading-c/?ref=lbp]]
+   [[https://www.geeksforgeeks.org/types-of-operator-overloading-in-c/]]
+\\ Friend functions
+   [[https://www.tutorialspoint.com/cplusplus/cpp_friend_functions.htm]]
+\\ Programs :: Printing Armstrong numbers
+   [[./armstrong_number.cpp]]
